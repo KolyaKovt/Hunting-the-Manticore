@@ -44,16 +44,14 @@ namespace Hunting_the_Manticore
                 {
                     Console.WriteLine("That round OVERSHOT the target.");
                 }
-
                 else if (number < manticoreCoordinate)
                 {
                     Console.WriteLine("That round FELL SHORT of the target.");
                 }
-
                 else
                 {
-                    manticoreHealth -= cannonDamage;
                     Console.WriteLine("That round was a DIRECT HIT!");
+                    manticoreHealth -= cannonDamage;
                     if (manticoreHealth == 0) break;
                 }
             }
